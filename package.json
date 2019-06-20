@@ -1,13 +1,13 @@
 {
-  "name": "boilerblate",
+  "name": "app2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "babel src -d build",
-    "prepare": "yarn run build",
+    "build": "webpack src -d build",
     "watch": "webpack --watch",
+    "prepublishOnly": "babel ./src --out-dir ./dist -s inline",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -20,8 +20,9 @@
     "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^0.1.19",
