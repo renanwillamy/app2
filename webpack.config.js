@@ -12,6 +12,11 @@ module.exports = {
         compress: true,
         port: 3000
     },
+    resolve: {
+    alias: {
+      src: path.resolve(__dirname, 'src')
+    }
+  },
     module: {
         rules: [
             {

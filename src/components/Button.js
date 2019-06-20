@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/app.css'
+import 'src/style/app.css'
 
 const Button = ({handleClick, title}) => {
     title = title ? title: 'Button'

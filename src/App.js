@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Button from './components/Button';
-import TextField from './components/TextField';
-import './style/app.css'
+import Button from 'src/components/Button';
+import TextField from 'src/components/TextField';
+import 'src/style/app.css'
 
 class App extends Component {
 

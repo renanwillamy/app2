@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/app.css'
+import 'src/style/app.css'
 const TextField = ({ value, onChange, type }) => {
     type = type === 'password' ? type : 'text'
     return (
