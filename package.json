@@ -7,7 +7,8 @@
     "start": "webpack-dev-server",
     "build": "webpack src -d build",
     "watch": "webpack --watch",
-    "prepublishOnly": "babel src -d build",
+    "prepublishOnly": "babel src -d dist --copy-files",
+    "transpile": "babel src -d dist --copy-files",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
