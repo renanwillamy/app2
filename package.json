@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack src -d build",
+    "build": "webpack build",
     "watch": "webpack --watch",
     "prepublishOnly": "babel src -d dist --copy-files",
     "transpile": "babel src -d dist --copy-files",
