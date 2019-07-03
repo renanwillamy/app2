@@ -5,7 +5,10 @@ module.exports = {
     mode: 'development',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index.bundle.js'
+        library: 'myLib',
+        libraryTarget: 'umd',
+        filename: 'myLib.js',
+        umdNamedDefine: true
     },
     devServer: {
         contentBase: path.join(__dirname, 'src'),
